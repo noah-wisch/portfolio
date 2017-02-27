@@ -1,45 +1,50 @@
-// @import '../node_modules/foundation-sites/scss/foundation';
-// @import 'resume';
+@import '../node_modules/foundation-sites/scss/foundation';
+@import 'resume';
 
-// @include foundation-global-styles;
-// @include foundation-grid;
+@include foundation-global-styles;
+@include foundation-grid;
 
 * {
-	background-color:#EDEDED;
+	background-color: #EDEDED;
 }
 
-.bodytext {
-	font-family:Source Sans Pro;
-	font-size:15px;
-	text-align:center;
-}
+ul {
+	@include grid-row();
+	list-style: none;
+	// display: flex;
+	// justify-content: space-between;
+	text-align: center;
+	max-width: 20%;
+	margin-left:39%;
+	
 
-#firstbody {
-	margin-top:1%;
-	word-spacing:20px;
+	li {
+		@include grid-column(4);
+		margin-top: 1%;
 
+	}
 }
 
 #name {
-	font-family:Source Sans Pro;
-	font-size:22px;
-	font-weight:600;
-	text-align:center;
+	font-family: Scope One;
+	font-size: 1.6em;
+	font-weight: bolder;
+	text-align: center;
 }
 
 a {
-	text-decoration:none;
-	color:black;
-}
+	text-decoration: none;
+	color: black;
 
-a:hover {
-	font-weight:600;
-	color:black;
-}
+	a:hover {
+		font-weight:600;
+		color:black;
+	}
 
-a:visited{
-	text-decoration:none;
-	color:black;
+	a:visited{
+		text-decoration:none;
+		color:black;
+	}
 }
 
 #main {
@@ -48,7 +53,7 @@ a:visited{
 
 #line {
 	border-top:2px solid #A3A3A3;
-	width:180px;
+	width:230px;
 	margin-top:1%;
 	margin-right:auto;
 	margin-left:auto;
@@ -62,13 +67,13 @@ a:visited{
 	text-align:center;
 	margin-top:3%;
 
-    .icon {
+    #icon {
         text-decoration:none;
         opacity:.6;
         padding-right:5px;
     }
 
-    .icon:hover {
+    #icon:hover {
 	    opacity:1;
     }
 }

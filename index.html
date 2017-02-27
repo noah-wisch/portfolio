@@ -3,7 +3,6 @@
 
 <head>
     <title>NRW</title>
-    <!--<link rel="shortcut icon" href="http://sarahnelson.us/favicon.ico" />-->
     <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
@@ -15,23 +14,23 @@
 <body ng-app="PortfolioApp">
 
     <main id="main">
-
-        <!--<img src="image.png" id="favicon" />-->
         <p id="name">Noah Reid Wisch</p>
 
         <div id="line"></div>
 
         <nav id="menubar">
-            <p class="bodytext" id="firstbody"><a href="portfolio.html">portfolio</a>
-                <a href="resume.html">resume</a>
-                <a href="about.html">about</a>
+            <ul>
+                <li><a ui-sref="portfolio">portfolio</a></li>
+                <li><a ui-sref="resume">resume</a></li>
+                <li><a ui-sref="about">about</a></li>
+            </ul>
         </nav>
 
         <!--sprites-->
         <section class="sprites">
-            <a href="https://www.linkedin.com/in/nwisch" target="new"><img src="assets/linkedin.png" height="30px" width="30px" id="icon" /></a>
-            <a href="https://github.com/noah-wisch" target="new"><img src="assets/github.png" height="31px" width="31px" id="icon" /></a>
-            <a href="mailto:noah.wisch@gmail.com"><img src="assets/email.png" height="31px" width="31px" id="icon" /></a>
+            <a href="https://www.linkedin.com/in/nwisch" target="new"><img src="linkedin.png" height="30px" width="30px" id="icon" /></a>
+            <a href="https://github.com/noah-wisch" target="new"><img src="github.png" height="31px" width="31px" id="icon" /></a>
+            <a href="mailto:noah.wisch@gmail.com"><img src="email.png" height="31px" width="31px" id="icon" /></a>
         </section>
     </main>
 

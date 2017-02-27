@@ -10,7 +10,7 @@ for (let i = 0; i < controllers.length; i++) {
 	app.controller(controllers[i].name, controllers[i].func);
 }
 
-/* Routes */
+// /* Routes */
 const routes = require('./routes');
 
 app.config($stateProvider => {

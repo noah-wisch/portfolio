@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+// const babel = require('gulp-babel');
 const browser = require('gulp-browser');
+const strip = require('gulp-strip-comments');
 
 gulp.task('default', ['html', 'css', 'js']);
 
@@ -8,19 +10,28 @@ gulp.task('html', () => {
     gulp.src('templates/*.html')
         .pipe(gulp.dest('public/templates'));
 
-    return gulp.src('index.html')
+    gulp.src('assets/*')
+        .pipe(gulp.dest('public/'));
+
+    return gulp.src('*.html')
+        .pipe(strip.text())
         .pipe(gulp.dest('public/'));
 });
 
 gulp.task('css', () => {
     return gulp.src('scss/style.scss')
         .pipe(sass())
+        .pipe(strip.text())
         .pipe(gulp.dest('public/'));
 });
 
 gulp.task('js', () => {
     return gulp.src('js/app.js')
         .pipe(browser.browserify())
+        // .pipe(babel({
+        //     presets: ['es2015']
+        // }))
+        .pipe(strip.text())
         .pipe(gulp.dest('public/'));
 });
 
