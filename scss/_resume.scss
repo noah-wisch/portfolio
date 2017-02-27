@@ -1,13 +1,9 @@
-* {
-	background-color:#EDEDED;
-}
 
 #resume {
 	width:40%;
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
-	margin-top:2%;
 }
 
 #bodytext {
@@ -16,17 +12,21 @@
 	text-align:center;
 }
 
+span {
+	font-weight: bold;
+}
+
 a {
 	text-decoration:none;
 	color:black;
-}
 
-a:hover {
-	font-weight:600;
-}
+	a:hover {
+		color: #F66733;
+	}
 
-a:visited {
-	color:black;
+	a:visited {
+		color:black;
+	}
 }
 
 #back {
@@ -34,3 +34,4 @@ a:visited {
 	height:30px;
 	position:relative;
 }
+

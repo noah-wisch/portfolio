@@ -10,7 +10,18 @@ for (let i = 0; i < controllers.length; i++) {
 	app.controller(controllers[i].name, controllers[i].func);
 }
 
-// /* Routes */
+/* Components */
+const components = [
+	require('./components/about'),
+	require('./components/portfolio'),
+	require('./components/resume'),
+];
+
+for (let i = 0; i < components.length; i++) {
+	app.component(components[i].name, components[i].func);
+}
+
+/* Routes */
 const routes = require('./routes');
 
 app.config($stateProvider => {
@@ -18,3 +29,4 @@ app.config($stateProvider => {
 		$stateProvider.state(routes[i]);
 	}
 });
+
