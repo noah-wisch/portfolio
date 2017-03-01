@@ -1,6 +1,8 @@
 module.exports = {
 	name: 'AboutController',
-	func($scope) {
-        console.log('testing about');
+	func($scope, $location) {
+		$scope.isActive = (viewLocation) => {
+			return viewLocation === $location.path();
+		};
 	},
 };

@@ -4,6 +4,30 @@
 	position:relative;
 }
 
-h1 {
-    text-align: center;
+img {
+	border-radius: 5px;
+}
+
+.images {
+	@include grid-row();
+	max-width: 80%;
+	margin-left: 200px;
+
+	#cache {
+		@include grid-column(4);
+		width: 30%;
+		// border: 2px solid red;
+	}
+
+	#chatter {
+		@include grid-column(4);
+		width: 30%;
+		// border: 2px solid red;
+	}
+
+	#menu {
+		@include grid-column(4);
+		width: 30%;
+		// border: 2px solid red;
+	}
 }

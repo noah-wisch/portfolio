@@ -46,8 +46,56 @@ a {
   height: 30px;
   position: relative; }
 
-h1 {
-  text-align: center; }
+img {
+  border-radius: 5px; }
+
+.images {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  margin-left: 200px; }
+  .images::before, .images::after {
+    display: table;
+    content: ' '; }
+  .images::after {
+    clear: both; }
+  .images #cache {
+    width: 33.33333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    width: 30%; }
+    @media print, screen and (min-width: 40em) {
+      .images #cache {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    .images #cache:last-child:not(:first-child) {
+      float: right; }
+  .images #chatter {
+    width: 33.33333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    width: 30%; }
+    @media print, screen and (min-width: 40em) {
+      .images #chatter {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    .images #chatter:last-child:not(:first-child) {
+      float: right; }
+  .images #menu {
+    width: 33.33333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    width: 30%; }
+    @media print, screen and (min-width: 40em) {
+      .images #menu {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    .images #menu:last-child:not(:first-child) {
+      float: right; }
 
 html {
   font-family: sans-serif;
@@ -1118,7 +1166,9 @@ ul {
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
-    margin-top: 1%; }
+    margin-top: 1%;
+    padding-right: 0;
+    padding-left: 0; }
     @media print, screen and (min-width: 40em) {
       ul li {
         padding-right: 0.9375rem;
@@ -1134,7 +1184,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  font-family: roboto; }
 
 a:hover {
   font-weight: 600;

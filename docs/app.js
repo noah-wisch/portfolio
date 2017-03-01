@@ -54,22 +54,22 @@ module.exports = {
 },{}],5:[function(require,module,exports){
 module.exports = {
 	name: 'AboutController',
-	func($scope) {
-        console.log('testing about');
+	func($scope, $location) {
+		$scope.isActive = (viewLocation) => {
+			return viewLocation === $location.path();
+		};
 	},
 };
 },{}],6:[function(require,module,exports){
 module.exports = {
 	name: 'PortfolioController',
-	func($scope) {
-        console.log('testing portfolio');
+	func($scope, $location) {
 	},
 };
 },{}],7:[function(require,module,exports){
 module.exports = {
 	name: 'ResumeController',
-	func($scope) {
-        console.log('testing resume');
+	func($scope, $location) {
 	},
 };
 },{}],8:[function(require,module,exports){
