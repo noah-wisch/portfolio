@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NRW</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://npmcdn.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.6.2/angular-messages.min.js"></script>-->
+    <script src="app.js"></script>
+</head>
+
+<body ng-app="PortfolioApp">
+
+    <main id="main">
+        <h1 id="name">Noah Reid Wisch</h1>
+
+        <div id="line"></div>
+
+        <nav id="menubar">
+            <ul>
+                <li><a ui-sref="portfolio">portfolio</a></li>
+                <li><a ui-sref="resume">resume</a></li>
+                <li><a ui-sref="about">about</a></li>
+            </ul>
+        </nav>
+
+        <ui-view></ui-view>
+
+        <section class="sprites">
+            <a href="https://www.linkedin.com/in/nwisch" target="new"><img src="linkedin.png" height="30px" width="30px" id="icon" /></a>
+            <a href="https://github.com/noah-wisch" target="new"><img src="github.png" height="31px" width="31px" id="icon" /></a>
+            <a href="mailto:noah.wisch@gmail.com"><img src="email.png" height="31px" width="31px" id="icon" /></a>
+        </section>
+    </main>
+
+</body>
+
+</html>
