@@ -1,19 +1,18 @@
 #headshot {
-	height: 250px;
+	height: 260px;
+	border-radius: 50%;
 	width: 250px;
 	position: absolute;
-	margin: auto;
-	bottom: 0; top: 0; right: 0;
-	border-radius: 50%;
+	margin-left: 200px;
 }
 
-#headshotMain {
-	position: absolute;
-	height: 100%;
-	width: 40%;
-	left: 0;
+#text {
+    width: 45%;
+	margin-left: 500px;
 }
 
-#text{
-    
+#back {
+	width:30px;
+	height:30px;
+	position:relative;
 }

@@ -4,6 +4,7 @@ const app = angular.module('PortfolioApp', ['ui.router']);
 const controllers = [
 	require('./controllers/resume'),
 	require('./controllers/about'),
+	require('./controllers/portfolio'),
 ];
 
 for (let i = 0; i < controllers.length; i++) {

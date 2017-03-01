@@ -1,4 +1,8 @@
 module.exports = [
+     {
+        name: 'home',
+        url: '/',
+    },
     {
         name: 'about',
         url: '/about',
