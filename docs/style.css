@@ -50,16 +50,6 @@ a {
   height: 30px;
   position: relative; }
 
-h3 {
-  font-family: Roboto; }
-
-p {
-  font-size: 0.8em;
-  font-family: Roboto; }
-
-img {
-  width: 85%; }
-
 .images1 {
   max-width: 75rem;
   margin-right: auto;
@@ -107,6 +97,13 @@ img {
         padding-left: 0.9375rem; } }
     .images1 #menu:last-child:not(:first-child) {
       float: right; }
+  .images1 h3 {
+    font-family: Roboto; }
+  .images1 p {
+    font-size: 0.8em;
+    font-family: Roboto; }
+  .images1 img {
+    width: 85%; }
 
 .images2 {
   max-width: 75rem;
@@ -130,6 +127,13 @@ img {
         padding-left: 0.9375rem; } }
     .images2 #movies:last-child:not(:first-child) {
       float: right; }
+  .images2 h3 {
+    font-family: Roboto; }
+  .images2 p {
+    font-size: 0.8em;
+    font-family: Roboto; }
+  .images2 img {
+    width: 85%; }
 
 html {
   font-family: sans-serif;
