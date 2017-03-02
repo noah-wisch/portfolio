@@ -5,6 +5,7 @@ const controllers = [
 	require('./controllers/resume'),
 	require('./controllers/about'),
 	require('./controllers/portfolio'),
+	require('./controllers/page'),
 ];
 
 for (let i = 0; i < controllers.length; i++) {
@@ -23,14 +24,15 @@ for (let i = 0; i < components.length; i++) {
 
 const routes = require('./routes');
 
-app.config($stateProvider => {
+app.config(($stateProvider, $urlRouterProvider) => {
 	for (let i = 0; i < routes.length; i++) {
 		$stateProvider.state(routes[i]);
 	}
+	 $urlRouterProvider.when('', '/home');
 });
 
 
-},{"./components/about":2,"./components/portfolio":3,"./components/resume":4,"./controllers/about":5,"./controllers/portfolio":6,"./controllers/resume":7,"./routes":8}],2:[function(require,module,exports){
+},{"./components/about":2,"./components/portfolio":3,"./components/resume":4,"./controllers/about":5,"./controllers/page":6,"./controllers/portfolio":7,"./controllers/resume":8,"./routes":9}],2:[function(require,module,exports){
 module.exports = {
 	name: 'about',
 	func: {
@@ -62,7 +64,7 @@ module.exports = {
 };
 },{}],6:[function(require,module,exports){
 module.exports = {
-	name: 'PortfolioController',
+	name: 'PageController',
 	func($scope, $location) {
 		$scope.isActive = (viewLocation) => {
 			return viewLocation === $location.path();
@@ -71,7 +73,7 @@ module.exports = {
 };
 },{}],7:[function(require,module,exports){
 module.exports = {
-	name: 'ResumeController',
+	name: 'PortfolioController',
 	func($scope, $location) {
 		$scope.isActive = (viewLocation) => {
 			return viewLocation === $location.path();
@@ -79,10 +81,19 @@ module.exports = {
 	},
 };
 },{}],8:[function(require,module,exports){
+module.exports = {
+	name: 'ResumeController',
+	func($scope, $location) {
+		$scope.isActive = (viewLocation) => {
+			return viewLocation === $location.path();
+		};
+	},
+};
+},{}],9:[function(require,module,exports){
 module.exports = [
      {
         name: 'home',
-        url: '/',
+        url: '/home',
     },
     {
         name: 'about',

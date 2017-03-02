@@ -5,6 +5,7 @@ const controllers = [
 	require('./controllers/resume'),
 	require('./controllers/about'),
 	require('./controllers/portfolio'),
+	require('./controllers/page'),
 ];
 
 for (let i = 0; i < controllers.length; i++) {
@@ -25,9 +26,10 @@ for (let i = 0; i < components.length; i++) {
 /* Routes */
 const routes = require('./routes');
 
-app.config($stateProvider => {
+app.config(($stateProvider, $urlRouterProvider) => {
 	for (let i = 0; i < routes.length; i++) {
 		$stateProvider.state(routes[i]);
 	}
+	 $urlRouterProvider.when('', '/home');
 });
 
