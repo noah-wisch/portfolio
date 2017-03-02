@@ -4,19 +4,6 @@
 	position:relative;
 }
 
-h3 {
-	font-family: Roboto;
-}
-
-p {
-	font-size: 0.8em;
-	font-family: Roboto;
-}
-
-img {
-	width: 85%;
-}
-
 .images1 {
 	@include grid-row();
 	max-width: 80%;
@@ -36,6 +23,19 @@ img {
 		@include grid-column(4);
 		text-align: center;
 	}
+
+	h3 {
+		font-family: Roboto;
+	}
+
+	p {
+		font-size: 0.8em;
+		font-family: Roboto;
+	}
+
+	img {
+		width: 85%;
+	}
 }
 
 .images2 {
@@ -47,5 +47,18 @@ img {
 		@include grid-column(4);
 		text-align: center;
 		// width: 32%;
+	}
+
+	h3 {
+		font-family: Roboto;
+	}
+
+	p {
+		font-size: 0.8em;
+		font-family: Roboto;
+	}
+
+	img {
+		width: 85%;
 	}
 }
