@@ -1187,32 +1187,17 @@ button {
   background-color: #EDEDED; }
 
 ul {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  justify-content: center;
   list-style: none;
   text-align: center;
   max-width: 20%;
-  margin-left: 39%; }
-  ul::before, ul::after {
-    display: table;
-    content: ' '; }
-  ul::after {
-    clear: both; }
+  margin: auto;
+  padding-left: 0; }
   ul li {
-    width: 33.33333%;
-    float: left;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem;
-    margin-top: 1%;
+    margin: 5% 5px 0 5px;
     padding-right: 0;
     padding-left: 0; }
-    @media print, screen and (min-width: 40em) {
-      ul li {
-        padding-right: 0.9375rem;
-        padding-left: 0.9375rem; } }
-    ul li:last-child:not(:first-child) {
-      float: right; }
 
 #name {
   font-family: Scope One;
