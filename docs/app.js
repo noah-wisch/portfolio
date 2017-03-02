@@ -64,12 +64,18 @@ module.exports = {
 module.exports = {
 	name: 'PortfolioController',
 	func($scope, $location) {
+		$scope.isActive = (viewLocation) => {
+			return viewLocation === $location.path();
+		};
 	},
 };
 },{}],7:[function(require,module,exports){
 module.exports = {
 	name: 'ResumeController',
 	func($scope, $location) {
+		$scope.isActive = (viewLocation) => {
+			return viewLocation === $location.path();
+		};
 	},
 };
 },{}],8:[function(require,module,exports){
