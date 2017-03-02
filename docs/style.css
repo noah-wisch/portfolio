@@ -46,9 +46,6 @@ a {
   height: 30px;
   position: relative; }
 
-img {
-  border-radius: 5px; }
-
 .images {
   max-width: 75rem;
   margin-right: auto;
@@ -1205,9 +1202,10 @@ a:visited {
   margin-right: auto;
   margin-left: auto; }
 
-#nugg {
+.nugget {
   display: flex;
   width: 5%;
+  height: 110px;
   margin: auto; }
 
 .sprites {

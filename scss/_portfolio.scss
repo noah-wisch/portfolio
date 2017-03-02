@@ -4,10 +4,6 @@
 	position:relative;
 }
 
-img {
-	border-radius: 5px;
-}
-
 .images {
 	@include grid-row();
 	max-width: 80%;
