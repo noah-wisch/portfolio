@@ -1,15 +1,40 @@
 <section ng-controller="PortfolioController">
     <a ui-sref="home"><img src="back.png" id="back" /></a>
 
-    <div class="images">
-        <div>
-            <a href="http://worthless-cellar.surge.sh/"><img src="chatterbox.png" id="chatter" /></a>
+    <div class="images1">
+        <div id="chatter">
+            <a href="http://worthless-cellar.surge.sh/"><img src="chatterbox.png" /></a>
+            <h3>Chatterbox</h3>
+            <p>
+                A chat app that allows the user to send, receive, and delete messages. Message logs are updated via a chat API, and displayed
+                on the screen.
+            </p>
         </div>
-        <div>
-            <a href="https://enigmatic-woodland-53824.herokuapp.com/notloggedin.html"><img src="cacheFull.png" id="cache" /></a>
+        <div id="cache">
+            <a href="https://enigmatic-woodland-53824.herokuapp.com/notloggedin.html"><img src="cacheFull.png" /></a>
+            <h3>Bibliocache</h3>
+            <p>
+                A web-based app that gamifies your reading selections. Based on the geocaching game, users are led around Charlotte to specific
+                locations that send downloadable digital books when they are within the designated range.
+            </p>
         </div>
-        <div>
-            <a href="http://economic-health.surge.sh/"><img src="menuApp.png" id="menu" /></a>
+        <div id="menu">
+            <a href="http://economic-health.surge.sh/"><img src="menuApp.png" /></a>
+            <h3>Menu App</h3>
+            <p>
+                An application meant to mimic a restaurants online menu. It was built out using views in a single HTML file as well as mustache
+                to render items to the DOM.
+            </p>
+        </div>
+    </div>
+
+    <div class="images2">
+        <div id="movies">
+            <a href="http://even-zephyr.surge.sh/"><img src="movies.png" /></a>
+            <h3>Netflix Binge App</h3>
+            <p>
+                Movie website site built using AngularJS pulling information from the Movie Database API. Items were taken from the API with AJAX requests.
+            </p>
         </div>
     </div>
 </section>
