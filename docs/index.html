@@ -22,12 +22,12 @@
 <body ng-app="PortfolioApp">
 
     <main id="main">
-        <img id="nugg" src="nugget.png" ng-show="isActive('')"/>
-        <h1 id="name" ng-show="isActive('')">Noah Reid Wisch</h1>
+        <img id="nugg" src="nugget.png" ng-hide="isActive('/home')"/>
+        <h1 id="name" ng-show="isActive('/about')">Noah Reid Wisch</h1>
 
-        <div id="line" ng-show="isActive('')"></div>
+        <div id="line" ng-hide="isActive('/')"></div>
 
-        <nav id="menubar" ng-show="isActive('')">
+        <nav id="menubar" ng-hide="isActive('/')">
             <ul>
                 <li><a ui-sref="portfolio">portfolio</a></li>
                 <li><a ui-sref="resume">resume</a></li>
@@ -37,7 +37,7 @@
 
         <ui-view></ui-view>
 
-        <section class="sprites" ng-show="isActive('')">
+        <section class="sprites" ng-hide="isActive('/')">
             <a href="https://www.linkedin.com/in/nwisch" target="new"><img src="linkedin.png" height="30px" width="30px" id="icon" /></a>
             <a href="https://github.com/noah-wisch" target="new"><img src="github.png" height="31px" width="31px" id="icon" /></a>
             <a href="mailto:noah.wisch@gmail.com"><img src="email.png" height="31px" width="31px" id="icon" /></a>
