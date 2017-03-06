@@ -6,6 +6,9 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
+$header-font: Lato;
+$secondary-font: Open Sans;
+
 * {
 	background-color: #EDEDED;
 }
@@ -30,16 +33,16 @@ ul {
 }
 
 #name {
-	font-family: Scope One;
+	font-family: $header-font;
 	font-size: 1.6em;
-	font-weight: bolder;
+	font-weight: lighter;
 	text-align: center;
 }
 
 a {
 	text-decoration: none;
 	color: black;
-	font-family: roboto;
+	font-family: $secondary-font;
 }
 
 a:hover {

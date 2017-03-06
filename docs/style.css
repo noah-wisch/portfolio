@@ -6,7 +6,7 @@
   margin-top: -300px; }
 
 #bodytext {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 15px;
   text-align: center; }
 
@@ -40,7 +40,7 @@ a {
   margin-left: 500px;
   margin-top: -120px; }
   #text p {
-    font-family: Roboto; }
+    font-family: Open Sans; }
 
 #back {
   width: 30px;
@@ -100,10 +100,10 @@ a {
     .images1 #menu:last-child:not(:first-child) {
       float: right; }
   .images1 h3 {
-    font-family: Roboto; }
+    font-family: Open Sans; }
   .images1 p {
     font-size: 0.8em;
-    font-family: Roboto; }
+    font-family: Open Sans; }
   .images1 img {
     width: 85%; }
 
@@ -1202,15 +1202,15 @@ ul {
     padding-left: 0; }
 
 #name {
-  font-family: Scope One;
+  font-family: Lato;
   font-size: 1.6em;
-  font-weight: bolder;
+  font-weight: lighter;
   text-align: center; }
 
 a {
   text-decoration: none;
   color: black;
-  font-family: roboto; }
+  font-family: Open Sans; }
 
 a:hover {
   font-weight: 600;

@@ -1,3 +1,5 @@
+$secondary-font: Open Sans;
+
 #headshot {
 	height: 260px;
 	border-radius: 50%;
@@ -13,7 +15,7 @@
 	margin-top: -120px;
 
 	p {
-		font-family: Roboto;
+		font-family: $secondary-font;
 	}
 }
 
