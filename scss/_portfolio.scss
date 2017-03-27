@@ -52,12 +52,12 @@ $secondary-font: Open Sans;
 	}
 
 	h3 {
-		font-family: Roboto;
+		font-family: $secondary-font;
 	}
 
 	p {
 		font-size: 0.8em;
-		font-family: Roboto;
+		font-family: $secondary-font;
 	}
 
 	img {

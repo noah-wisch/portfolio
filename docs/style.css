@@ -130,10 +130,10 @@ a {
     .images2 #movies:last-child:not(:first-child) {
       float: right; }
   .images2 h3 {
-    font-family: Roboto; }
+    font-family: Open Sans; }
   .images2 p {
     font-size: 0.8em;
-    font-family: Roboto; }
+    font-family: Open Sans; }
   .images2 img {
     width: 85%; }
 
