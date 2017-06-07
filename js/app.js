@@ -32,4 +32,3 @@ app.config(($stateProvider, $urlRouterProvider) => {
 	}
 	 $urlRouterProvider.when('', '/home');
 });
-

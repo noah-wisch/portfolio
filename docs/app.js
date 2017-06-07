@@ -31,7 +31,6 @@ app.config(($stateProvider, $urlRouterProvider) => {
 	 $urlRouterProvider.when('', '/home');
 });
 
-
 },{"./components/about":2,"./components/portfolio":3,"./components/resume":4,"./controllers/about":5,"./controllers/page":6,"./controllers/portfolio":7,"./controllers/resume":8,"./routes":9}],2:[function(require,module,exports){
 module.exports = {
 	name: 'about',

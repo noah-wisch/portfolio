@@ -43,12 +43,10 @@ $secondary-font: Open Sans;
 .images2 {
 	@include grid-row();
 	max-width: 80%;
-	// margin-top: -100px;
 
 	#movies {
 		@include grid-column(4);
 		text-align: center;
-		// width: 32%;
 	}
 
 	h3 {

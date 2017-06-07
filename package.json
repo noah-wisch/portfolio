@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio site for my work.",
+  "description": "Personal portfolio site for showcasing my work.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/noah-wisch/portfolio/issues"
   },
-  "homepage": "https://github.com/noah-wisch/portfolio#readme"
+  "homepage": "https://github.com/noah-wisch/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-strip-comments": "^2.4.5"
+  }
 }
