@@ -8,6 +8,8 @@
 
 $header-font: Lato;
 $secondary-font: Open Sans;
+// $media-medium: 800px;
+// $media-large: 1200px;
 
 * {
 	background-color: #EDEDED;
@@ -24,8 +26,7 @@ ul {
 	padding-left: 0;
 
 	li {
-		// @include grid-column(4);
-
+		//@include grid-column(3);
 		margin: 5% 5px 0 5px;
 		padding-right: 0;
 		padding-left: 0;
@@ -68,10 +69,10 @@ header {
 }
 
 .nugget {
-	display: flex;
-	width: 5%;
-	height: 110px;
-	margin:auto;
+		display: flex;
+		width: 5%;
+		height: 110px;
+		margin:auto;
 }
 
 /* icons */
